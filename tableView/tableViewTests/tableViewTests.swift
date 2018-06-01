@@ -2,8 +2,8 @@
 //  tableViewTests.swift
 //  tableViewTests
 //
-//  Created by epita on 28/03/2018.
-//  Copyright © 2018 epita. All rights reserved.
+//  Created by Mahajan BHRIGU on 28/03/2018.
+//  Copyright © 2018 Mahajan BHRIGU. All rights reserved.
 //
 
 import XCTest

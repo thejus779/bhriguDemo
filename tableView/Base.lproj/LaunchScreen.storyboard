@@ -1,25 +1,82 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Futura.ttc">
+            <string>Futura-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3" colorLabel="IBBuiltInLabel-Red">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chef" translatesAutoresizingMaskIntoConstraints="NO" id="vvh-1u-lOk">
+                                <rect key="frame" x="70" y="207" width="256" height="149"/>
+                                <color key="backgroundColor" red="1" green="0.57882184739999998" blue="0.38269082529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="149" id="Shl-l9-dhs"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bhrigu Mahajan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8iO-Po-Jhj">
+                                <rect key="frame" x="139" y="403" width="119" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.95033996620000005" green="1" blue="0.96185426110000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cook Appetizer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbZ-p9-vI7">
+                                <rect key="frame" x="115" y="142" width="168" height="26"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                <color key="textColor" red="0.95033996624356309" green="1" blue="0.96185426110245187" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bhrigu.mahajan@epita.fr" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDs-7v-5hG">
+                                <rect key="frame" x="94" y="456" width="187.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.57882184739999998" blue="0.38269082529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vvh-1u-lOk" firstAttribute="top" secondItem="QbZ-p9-vI7" secondAttribute="bottom" constant="39" id="0eg-rv-ugE"/>
+                            <constraint firstItem="8iO-Po-Jhj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="11" id="1vt-BP-fYu"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QbZ-p9-vI7" secondAttribute="trailing" id="49E-aK-Wch"/>
+                            <constraint firstItem="XDs-7v-5hG" firstAttribute="top" secondItem="8iO-Po-Jhj" secondAttribute="bottom" constant="32" id="81D-RN-cf1"/>
+                            <constraint firstItem="XDs-7v-5hG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8hz-dp-hE0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8iO-Po-Jhj" secondAttribute="trailing" id="Ehr-hU-MzS"/>
+                            <constraint firstItem="QbZ-p9-vI7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="122" id="JQk-Pp-GfY"/>
+                            <constraint firstItem="QbZ-p9-vI7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="11" id="Oe2-qL-iAy"/>
+                            <constraint firstItem="8iO-Po-Jhj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="S1T-Mf-SIK"/>
+                            <constraint firstItem="vvh-1u-lOk" firstAttribute="centerX" secondItem="8iO-Po-Jhj" secondAttribute="centerX" constant="-0.5" id="Wys-ZP-eRs"/>
+                            <constraint firstItem="XDs-7v-5hG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZhE-xf-0of"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QbZ-p9-vI7" secondAttribute="trailing" id="cMd-dT-XMR"/>
+                            <constraint firstItem="8iO-Po-Jhj" firstAttribute="top" secondItem="vvh-1u-lOk" secondAttribute="bottom" constant="47" id="dmg-E4-btN"/>
+                            <constraint firstItem="vvh-1u-lOk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="g2T-nl-WWE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XDs-7v-5hG" secondAttribute="trailing" id="wgo-5q-uKl"/>
+                            <constraint firstItem="QbZ-p9-vI7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="x8f-0C-L03"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chef" width="338" height="338"/>
+    </resources>
 </document>
